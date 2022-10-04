@@ -1,0 +1,38 @@
+#hero{
+    background-image: url("../img/hero.jpg");
+    height: 80vh;
+    background-position: center bottom ;
+    background-size: cover;
+    #overlay{
+        background-color: rgba($color: #A4DAF0, $alpha: .25);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        #firstline{
+            font-size: 80px;
+            font-weight: 800;
+            color: white
+        }
+        #secondline{
+            font-size: 80px;
+            font-weight: 800;
+            color: white;
+        }
+        #btn{
+            font-weight: 200;
+            font-size: 21px;
+            height: 80px;
+            width: 200px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 8px;
+            color: white;
+            background-color: #A4DAF0;
+            cursor: pointer;
+            
+        }
+    }
+}
