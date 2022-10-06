@@ -3,6 +3,17 @@
     height: 80vh;
     background-position: center bottom ;
     background-size: cover;
+    
+    
+    @include sm{
+        height: 100vh;
+    }
+    @include md{
+        height: 40vh;
+    }
+    @include lg{
+        height: 80vh;
+    }
     #overlay{
         background-color: rgba($color: #A4DAF0, $alpha: .25);
         height: 100%;
@@ -12,20 +23,20 @@
         align-items: center;
         
         #firstline{
-            font-size: 80px;
+            font-size: 20px;
             font-weight: 800;
             color: white
         }
         #secondline{
-            font-size: 80px;
+            font-size: 20px;
             font-weight: 800;
             color: white;
         }
         #btn{
             font-weight: 200;
-            font-size: 21px;
-            height: 80px;
-            width: 200px;
+            font-size: 12px;
+            height: 45px;
+            width: 100px;
             border: none;
             border-radius: 8px;
             margin-top: 8px;
