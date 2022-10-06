@@ -7,8 +7,21 @@
       "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
+    "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg" : {
+      "ft" : 16384,
+      "iS" : 833978,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -20,6 +33,19 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/img\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 98619,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -39,6 +65,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/content\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -81,7 +115,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -241,6 +275,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -281,7 +330,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "Motion-F22-Josh",
+    "displayValue" : "Motion-F22-PM",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0
@@ -991,7 +1040,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
