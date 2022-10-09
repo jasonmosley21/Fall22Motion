@@ -427,24 +427,68 @@ textarea {
   align-items: center;
 }
 #hero #overlay #firstline {
-  font-size: 20px;
+  font-size: 80px;
   font-weight: 800;
   color: white;
+}
+@media (min-width: 390px) {
+  #hero #overlay #firstline {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #overlay #firstline {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #overlay #firstline {
+    font-size: 80px;
+  }
 }
 #hero #overlay #secondline {
   font-size: 20px;
   font-weight: 800;
   color: white;
 }
+@media (min-width: 390px) {
+  #hero #overlay #secondline {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #overlay #secondline {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #overlay #secondline {
+    font-size: 80px;
+  }
+}
 #hero #overlay #btn {
   font-weight: 200;
-  font-size: 12px;
-  height: 45px;
-  width: 100px;
+  font-size: 45px;
+  height: 80px;
+  width: 200px;
   border: none;
   border-radius: 8px;
   margin-top: 8px;
   color: white;
   background-color: #A4DAF0;
   cursor: pointer;
+}
+@media (min-width: 390px) {
+  #hero #overlay #btn {
+    height: 45px;
+    width: 100px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #overlay #btn {
+    height: 80px;
+    width: 200px;
+    font-size: 20px;
+  }
 }

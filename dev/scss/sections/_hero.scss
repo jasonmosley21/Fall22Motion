@@ -23,26 +23,57 @@
         align-items: center;
         
         #firstline{
-            font-size: 20px;
+            font-size: 80px;
             font-weight: 800;
-            color: white
+            color: white;
+            
+            @include sm{
+                font-size: 20px;
+            }
+            @include md{
+                font-size: 40px;
+            }
+            @include lg{
+                font-size: 80px;
+            }
         }
         #secondline{
             font-size: 20px;
             font-weight: 800;
             color: white;
+
+            @include sm{
+                font-size: 20px;
+            }
+            @include md{
+                font-size: 40px;
+            }
+            @include lg{
+                font-size: 80px;
+            }
         }
         #btn{
             font-weight: 200;
-            font-size: 12px;
-            height: 45px;
-            width: 100px;
+            font-size: 45px;
+            height: 80px;
+            width: 200px;
             border: none;
             border-radius: 8px;
             margin-top: 8px;
             color: white;
             background-color: #A4DAF0;
             cursor: pointer;
+            
+            @include sm{
+                height: 45px;
+                width: 100px;
+                font-size: 12px;
+            }
+            @include md{
+                height: 80px;
+                width: 200px;
+                font-size: 20px;
+            }
             
         }
     }
