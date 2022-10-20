@@ -1,63 +1,55 @@
-// console.log("hello class");
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Sets
-gsap.set("#hero h1 span",{alpha:0.25})
-
-var heroButtonTL = gsap.timeline({paused:true});
-    heroButtonTL.to("#trails-btn",{duration:0.25,scale:2, backgroundColor:"#881d02"},"trigger")  
-    .to("#first-line",{duration:0.25, alpha:0, y:50},"trigger")
-    .to("#second-line",{duration:0.25, alpha:0, y:20},"trigger")
-    .to("#trails-btn i",{duration:0.25, rotateY:180},"-=0.15");
-
-
-var trailsBtn = document.querySelector("#trails-btn");
-
-trailsBtn.addEventListener("mouseover",function(){
-    heroButtonTL.play();
-})
-
-trailsBtn.addEventListener("mouseout",function(){
-    heroButtonTL.reverse();
-})
-
-function heroAnimation(){
-    var tl = gsap.timeline();
-    tl.from("#first-line",{duration:1,alpha:0, y:-100})
-    .from("#second-line",{duration:1,alpha:0, y:-100},"-=0.75")
-    .from("#trails-btn",{duration:1,y:100, alpha:0},"-=.5")
-    .from("#trails-btn i",{duration:0.5,rotation:90, alpha:0, transformOrigin: "left bottom"},"-=0.5");
-    return tl;
+function shopANIME(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#shopping", scrub:true, markers: true, end:"80% 0%", start:"top 50%"}});
+    tl.from("#item1",{x:-400},"firstrow")
+    .from("#item2",{x:400},"firstrow")
+    .from("#item3",{x:-400},"secondrow")
+    .from("#item4",{x:-400},"secondrow")
+    .from("#item5",{x:400},"secondrow")
+    .from("#item6",{x:400},"secondrow")
+    .from("#item7",{x:-400},"thirdrow")
+    .from("#item8",{y:400},"thirdrow")
+    .from("#item9",{x:400},"thirdrow")
+    .from("#item10",{x:-400},"fourthrow")
+    .from("#item11",{x:-400},"fourthrow")
+    .from("#item12",{x:400},"fourthrow")
+    .from("#item13",{x:400},"fourthrow")
+    .from("#item14",{y:400},"fifthrow")
+    .from("#item15",{y:400},"fifthrow")
+    .from("#item16",{y:400},"fifthrow")
+    .to("#viewall",{scale:2})
+    .to("#viewall",{scale:1});
 }
 
-function boxanime(){
-    var tl = gsap.timeline({scrollTrigger:{trigger: "#box", markers: true, scrub: true, start:"top 70%", end:"bottom 10%"}});
-    tl.from("#box",{duration:1, scale:2, rotation:-180, x:"-=300%"});
-    
-    return tl;
+function wonderANIME(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#wonder", scrub:true, markers: true, end:"10% 50%", start:"top 75%"}});
+    tl.to("#wonder", {rotateY:360})
+}   
+
+function sectionsANIME(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#sections", scrub:true, markers: true, end:"bottom 50%", start:"top 75%"}});
+    tl.from("#section1", {scale:.5, duration:1.05},"row1")
+    tl.to("#section1", {scale:.5},"row2")
+    tl.from("#section2", {scale:.5, duration:1.05},"row2")
+    tl.from("#section3", {scale:.5, duration:1.05},"row2")
+    tl.to("#section2", {scale:.5},"row3")
+    tl.to("#section3", {scale:.5},"row3")
+    tl.from("#section4", {scale:.5, duration:1.05},"row3")
+    tl.from("#section5", {scale:.5, duration:1.05},"row3")
+    tl.to("#section4", {scale:.5},"row4")
+    tl.to("#section5", {scale:.5},"row4")
+    tl.from("#section6", {scale:.5, duration:1.05},"row4")
+    tl.from("#section7", {scale:.5, duration:1.05},"row4")
+    tl.to("#section6", {scale:.5},"rerow4")
+    tl.to("#section7", {scale:.5},"rerow4");
 }
 
-function hikinganime(){
-    var tl = gsap.timeline({ScrollTrigger:{trigger:"#hiking", scrub:true, markers: true, end:"top 20%", start:"top 90%"}});
-    tl.from("#hiking aside div",{duration:1,scale:3, alpha:0} )
-    .from("hiking h1", {alpha:0, y:-100,duration:1},"peakAn1")
-
-}
-
-function hero2anime(){
-    var tl = gsap.timeline();
-
-    tl.from("#bg-img",{duration:5, clipPath:"inset(0 50%)"},"same")
-    .from("#hero-2 h1",{duration:1, scale:2, alpha:0},"same");
-    return tl;
-}
-var mainTimeline = gsap.timeline();
-mainTimeline.add(heroAnimation())
-.add(boxanime())
-.add(hikinganime())
-.add(hero2anime())
-;
+var maintimeline = gsap.timeline();
+maintimeline.add(shopANIME())
+.add(wonderANIME())
+.add(sectionsANIME());
 

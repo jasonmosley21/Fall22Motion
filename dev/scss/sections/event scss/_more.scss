@@ -1,0 +1,146 @@
+#more {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 32px;
+
+        @include md {
+            row-gap: 40px;
+        }
+
+        @include lg {
+            row-gap: 48px;
+        }
+
+        @include xl {
+            row-gap: 56px;
+        }
+
+        .heading {
+            display: flex;
+            column-gap: 8px;
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        #gallery {
+            display: flex;
+            column-gap: 40px;
+        }
+
+        aside {
+            section {
+                display: flex;
+                column-gap: 32px;
+
+                button {
+                    border-radius: 100px;
+                    width: 16px;
+                    height: 16px;
+                    background-color: var(--eerieblack);
+                }
+            }
+        }
+    }
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include lg {
+        flex-direction: row;
+        column-gap: 40px;
+    }
+
+    @include xl {
+        column-gap: 48px;
+    }
+
+    img {
+        width: 265px;
+        margin-bottom: 24px;
+
+        @include md {
+            width: 358px;
+            margin-bottom: 32px;
+        }
+
+        @include lg {
+            width: 480px;
+        }
+    }
+
+    section {
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+
+            h2 {
+                text-align: center;
+                width: 231px;
+
+                @include md {
+                    width: 358px;
+                }
+            }
+
+            h3 {
+                text-align: center;
+                width: 265px;
+                margin-top: 8px;
+
+                @include md {
+                    width: 358px;
+                    margin-top: 16px;
+                    margin-bottom: 24px;
+                }
+
+                @include lg {
+                    margin-top: 24px;
+                    margin-bottom: 32px;
+                }
+
+                @include lg {
+                    margin-top: 32px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        p {
+            width: 265px;
+            margin-top: 16px;
+
+            @include md {
+                width: 358px;
+            }
+
+            a:link,
+            a:visited {
+                color: var(--mikadogreen);
+                transition: .25s;
+                text-decoration: none;
+                display: inline-block;
+
+                margin-right: 24px;
+
+                @include lg {
+                    margin: 0;
+                }
+
+                &:hover,
+                &:active {
+                    color: var(--buckthornbrown);
+                }
+            }
+        }
+    }
+}

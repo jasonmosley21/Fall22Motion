@@ -1,5 +1,89 @@
 /* =============
     Base
 ============= */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
+html {
+    scroll-behavior: smooth;
+}
 
+.show-menu {
+    display: block !important;
+}
+
+.hideforsm {
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". content .";
+
+    .content {
+        grid-area: content;
+    }
+}
+
+.hideformd {
+    @include md {
+        display: none;
+    }
+}
+
+.hideforlg {
+    @include lg {
+        display: none;
+    }
+}
+
+.spacing {
+    margin-top: 64px;
+}
+
+.show-hide {
+    display: none !important;
+}
+
+.eventspacing {
+    margin-top: 40px;
+
+    @include md {
+        margin-top: 48px;
+    }
+
+    @include lg {
+        margin-top: 56px;
+    }
+
+    @include lg {
+        margin-top: 64px;
+    }
+}
+
+#showformd {
+    display: none;
+
+    @include md {
+        display: block;
+    }
+
+    @include lg {
+        display: none;
+    }
+}
+
+.showforlg {
+    display: none;
+
+    @include lg {
+        display: block;
+    }
+}

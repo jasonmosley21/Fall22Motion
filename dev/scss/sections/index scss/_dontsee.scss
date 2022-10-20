@@ -1,0 +1,51 @@
+#dontsee {
+    article {
+        background-color: var(--mikadogreen);
+        background-color: rgba($color: #A9A633, $alpha: 1.0);
+        border-radius: 8px;
+        padding: 70px 0;
+
+        @include md {
+            padding: 111px 0;
+        }
+
+        @include lg {
+            padding: 103px 0;
+        }
+
+        @include xl {
+            padding: 124px 0;
+            display: grid;
+            grid-template-columns: auto 734px auto;
+            grid-template-areas: ". section .";
+        }
+
+        section {
+            grid-area: section;
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                padding: 0 2px;
+                margin-top: 16px;
+
+                @include md {
+                    padding: 0 125px;
+                    margin-top: 32px;
+                }
+
+                @include lg {
+                    padding: 0 245px;
+                }
+
+                @include xl {
+                    padding: 0;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

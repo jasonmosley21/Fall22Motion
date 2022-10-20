@@ -1,14 +1,48 @@
 /* =============
     Typography
 ============= */
-body{
-    font-family: 'Rubik', sans-serif;
-}
-
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: 'Besley', serif;
     margin: 0;
 }
 
-p{
-    margin: 0;
+h1 {
+    font-size: rem-calc(40);
+    font-weight: 800;
+    line-height: 67px;
+}
+
+h2 {
+    font-size: rem-calc(32);
+    font-weight: 700;
+    line-height: 60.3px;
+}
+
+h3 {
+    font-size: rem-calc(24);
+    font-weight: 700;
+    line-height: 40.2px;
+}
+
+h4 {
+    font-size: rem-calc(24);
+    font-weight: 600;
+    line-height: 40.2px;
+}
+
+h5 {
+    font-size: rem-calc(16);
+    font-weight: 600;
+    line-height: 26.8px;
+}
+
+p {
+    font-size: rem-calc(16);
+    font-weight: 500;
+    line-height: 26.8px;
 }

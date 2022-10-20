@@ -1,0 +1,55 @@
+#details {
+    grid-template-columns: 34px auto 34px;
+
+    @include md {
+        grid-template-columns: 119px auto 119px;
+    }
+
+    @include lg {
+        grid-template-columns: 227px auto 227px;
+    }
+
+    @include xl {
+        grid-template-columns: auto 933px auto;
+    }
+
+    article {
+        margin-bottom: 48px;
+
+        @include md {
+            margin-bottom: 56px;
+        }
+
+        @include lg {
+            margin-bottom: 64px;
+        }
+
+        @include xl {
+            margin-bottom: 72px;
+        }
+
+        h3 {
+            margin-top: 24px;
+            text-align: center;
+
+            a:link,
+            a:visited {
+                color: var(--mikadogreen);
+                transition: .25s;
+                text-decoration: none;
+                display: inline-block;
+
+                margin-right: 24px;
+
+                @include lg {
+                    margin: 0;
+                }
+
+                &:hover,
+                &:active {
+                    color: var(--buckthornbrown);
+                }
+            }
+        }
+    }
+}

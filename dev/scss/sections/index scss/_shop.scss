@@ -1,0 +1,243 @@
+#shopping {
+    @include lg {
+        grid-template-columns: 168px auto 168px;
+    }
+
+    @include xl {
+        grid-template-columns: auto 1032px auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            ". item1 item1 ."
+            "item2 item2 item3 item3"
+            "item4 item4 item5 item5"
+            "item6 item6 item7 item7"
+            ". item8 item8 ."
+            "item9 item9 item10 item10"
+            "item11 item11 item12 item12"
+            "item13 item13 item14 item14"
+            "item15 item15 item16 item16";
+        row-gap: 16px;
+        column-gap: 16px;
+        margin: 32px;
+
+        @include md {
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-areas:
+                ". item1 item1 item1 item2 item2 item2 ."
+                "item3 item3 item4 item4 item5 item5 item6 item6"
+                ". item7 item7 item8 item8 item9 item9 ."
+                "item10 item10 item11 item11 item12 item12 item13 item13"
+                ". item14 item14 item15 item15 item16 item16 ."
+            ;
+
+            @include lg {
+                grid-template-columns: repeat(9, 1fr);
+                grid-template-areas:
+                    ". . item1 item1 item1 item1 item1 . ."
+                    "item2 item2 item2 item3 item3 item3 item4 item4 item4"
+                    "item5 item5 item5 item6 item6 item6 item7 item7 item7"
+                    "item8 item8 item8 item8 item8 item9 item10 item11 item12"
+                    "item8 item8 item8 item8 item8 item13 item14 item15 item16";
+            }
+
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+
+            .items {
+                width: 100%;
+                padding-bottom: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--floralwhite);
+
+                img {
+                    margin-top: 100%;
+                    width: 75%;
+
+                }
+
+            }
+
+            .items:hover {
+                background-color: var(--snowbank);
+            }
+
+            aside {
+                display: flex;
+                justify-content: center;
+                margin-top: auto;
+
+            }
+        }
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #item1 {
+        grid-area: item1;
+
+    }
+
+    #item2 {
+        grid-area: item2;
+
+    }
+
+    #item3 {
+        grid-area: item3;
+
+    }
+
+    #item4 {
+        grid-area: item4;
+
+    }
+
+    #item5 {
+        grid-area: item5;
+
+    }
+
+    #item6 {
+        grid-area: item6;
+
+    }
+
+    #item7 {
+        grid-area: item7;
+
+    }
+
+    #item8 {
+        grid-area: item8;
+
+    }
+
+    #item9 {
+        grid-area: item9;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+
+    #item10 {
+        grid-area: item10;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+
+    #item11 {
+        grid-area: item11;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+
+    #item12 {
+        grid-area: item12;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+
+    #item13 {
+        grid-area: item13;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+
+    #item14 {
+        grid-area: item14;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+
+    #item15 {
+        grid-area: item15;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+
+    #item16 {
+        grid-area: item16;
+
+        @include lg {
+            aside {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    font-size: rem-calc(8);
+                }
+            }
+        }
+    }
+}

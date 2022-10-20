@@ -1,0 +1,127 @@
+#sections {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "section1 section1"
+            "section2 section3"
+            "section4 section5"
+            "section6 section7"
+        ;
+        column-gap: 16px;
+        row-gap: 16px;
+
+        @include md {
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-areas:
+                ". section1 section1 section1 section1 section1 section1 ."
+                "section2 section2 section2 section2 section3 section3 section3 section3"
+                "section4 section4 section4 section4 section5 section5 section5 section5"
+                "section6 section6 section6 section6 section7 section7 section7 section7"
+            ;
+        }
+
+        @include lg {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-areas:
+                ". . section1 section1 section1 section1 section1 section1 section1 section1 . ."
+                "section2 section2 section2 section2 section3 section3 section3 section3 section4 section4 section4 section4"
+                "section5 section5 section5 section5 section6 section6 section6 section6 section7 section7 section7 section7"
+            ;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .imgbutton {
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+
+                img {
+                    width: 100%;
+                }
+
+
+            }
+
+            h4 {
+                color: var(--eerieblack);
+                text-align: center;
+            }
+        }
+    }
+}
+
+#section1 {
+    grid-area: section1;
+
+    button {
+        aside {
+            background-image: url('../img/AllBooks.png');
+        }
+    }
+}
+
+#section2 {
+    grid-area: section2;
+
+    button {
+        aside {
+            background-image: url(../../../deploy/img/Witchcraft.png);
+        }
+    }
+}
+
+#section3 {
+    grid-area: section3;
+
+    button {
+        aside {
+            background-image: url(../../../deploy/img/Fiction.png);
+        }
+    }
+}
+
+#section4 {
+    grid-area: section4;
+
+    button {
+        aside {
+            background-image: url(../../../deploy/img/Folklore\ and\ Mythology.png);
+        }
+    }
+}
+
+#section5 {
+    grid-area: section5;
+
+    button {
+        aside {
+            background-image: url(../../../deploy/img/LGBTQIA.png);
+        }
+    }
+}
+
+#section6 {
+    grid-area: section6;
+
+    button {
+        aside {
+            background-image: url(../../../deploy/img/Social\ Justice.png);
+        }
+    }
+}
+
+#section7 {
+    grid-area: section7;
+
+    button {
+        aside {
+            background-image: url(../img/Crystals\ and\ Candles.png);
+        }
+    }
+}
