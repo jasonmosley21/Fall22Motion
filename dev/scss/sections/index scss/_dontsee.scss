@@ -1,7 +1,9 @@
 #dontsee {
+    overflow: hidden;
     article {
         background-color: var(--mikadogreen);
         background-color: rgba($color: #A9A633, $alpha: 1.0);
+        overflow: hidden;
         border-radius: 8px;
         padding: 70px 0;
 
@@ -22,6 +24,7 @@
 
         section {
             grid-area: section;
+            overflow: hidden;
 
             h3 {
                 text-align: center;

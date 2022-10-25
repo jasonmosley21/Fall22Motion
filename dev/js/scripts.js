@@ -57,8 +57,8 @@ function sectionsANIME(){
 }
 
 function dontseeANIME(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#dontsee", scrub:true, markers: true, end:"bottom top", start:"top bottom"}});
-    tl.from("#dontsee", {scaleX:0})
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#dontsee", scrub:true, markers: false, end:"bottom 75%", start:"top 80%"}});
+    tl.from("#dontsee article", {y:-400})
 }
 
 var maintimeline = gsap.timeline();
