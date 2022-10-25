@@ -3,8 +3,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+function heroANIME(){
+    var tl = gsap.timeline();
+    tl.from("#latewinter",{alpha:0,duration:2},"size")
+    .from("#latewinter h2", {scale:.5, duration:2, transformOrigin: "center bottom"},"size")
+    .from("#latewinter p", {scale:.5, duration:2,transformOrigin: "center top"},"size")
+    .from("#latewinter button", {scale:.5, duration:2,transformOrigin: "center top"},"size");
+}
+
 function shopANIME(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#shopping", scrub:true, markers: true, end:"80% 0%", start:"top 50%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#shopping", scrub:true, markers: false, end:"80% 0%", start:"top 50%"}});
     tl.from("#item1",{x:-400},"firstrow")
     .from("#item2",{x:400},"firstrow")
     .from("#item3",{x:-400},"secondrow")
@@ -26,12 +34,12 @@ function shopANIME(){
 }
 
 function wonderANIME(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#wonder", scrub:true, markers: true, end:"10% 50%", start:"top 75%"}});
-    tl.to("#wonder", {rotateY:360})
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#wonder", scrub:true, markers: false, end:"10% 50%", start:"top 75%"}});
+    tl.to("#wonder", {rotateY:360});
 }   
 
 function sectionsANIME(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#sections", scrub:true, markers: true, end:"bottom 50%", start:"top 75%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#sections", scrub:true, markers: false, end:"bottom 50%", start:"top 75%"}});
     tl.from("#section1", {scale:.5, duration:1.05},"row1")
     tl.to("#section1", {scale:.5},"row2")
     tl.from("#section2", {scale:.5, duration:1.05},"row2")
@@ -48,8 +56,15 @@ function sectionsANIME(){
     tl.to("#section7", {scale:.5},"rerow4");
 }
 
+function dontseeANIME(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#dontsee", scrub:true, markers: true, end:"bottom top", start:"top bottom"}});
+    tl.from("#dontsee", {scaleX:0})
+}
+
 var maintimeline = gsap.timeline();
-maintimeline.add(shopANIME())
+maintimeline.add(heroANIME())
+.add(shopANIME())
 .add(wonderANIME())
-.add(sectionsANIME());
+.add(sectionsANIME())
+.add(dontseeANIME());
 
