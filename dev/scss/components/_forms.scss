@@ -2,75 +2,17 @@
     Forms
 ============= */
 
-[type='text'],
-[type='password'],
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='month'],
-[type='week'],
-[type='email'],
-[type='number'],
-[type='search'],
-[type='tel'],
-[type='time'],
-[type='url'],
-[type='color'],
-textarea {
-  box-shadow: none;
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{
+	box-shadow: none;
 }
 
-[type='text']:focus,
-[type='password']:focus,
-[type='date']:focus,
-[type='datetime']:focus,
-[type='datetime-local']:focus,
-[type='month']:focus,
-[type='week']:focus,
-[type='email']:focus,
-[type='number']:focus,
-[type='search']:focus,
-[type='tel']:focus,
-[type='time']:focus,
-[type='url']:focus,
-[type='color']:focus,
-textarea:focus {
-  box-shadow: none;
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus{
+	box-shadow: none;
 }
 
 input[type=text],
 input[type=email],
 input[type=password],
 textarea {
-  -webkit-appearance: none;
-}
-
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--navygreen);
-  opacity: 1;
-  /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: var(--navygreen);
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: var(--navygreen);
-}
-
-form {
-  display: flex;
-  align-items: center;
-
-  input {
-    border: 1px solid var(--navygreen);
-    width: 375px;
-    height: 58px;
-    border-radius: 8px;
-    margin-right: -171px;
-  }
+    -webkit-appearance: none;
 }
