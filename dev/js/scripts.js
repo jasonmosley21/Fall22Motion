@@ -4,13 +4,7 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(GSDevTools);
 
-function barsANIME(){
-    var tl = gsap.timeline()
-    
-    return tl;
-}
-
-function logoANIME(){
+function transformationANIME(){
     var tl = gsap.timeline()
     
     return tl;
@@ -22,10 +16,16 @@ function titleANIME(){
     return tl;
 }
 
+function revealANIME(){
+    var tl = gsap.timeline()
+    
+    return tl;
+}
+
 var maintl = gsap.timeline();
-maintl.add(barsANIME())
-.add(logoANIME())
-.add(titleANIME());
+maintl.add(transformationANIME())
+.add(titleANIME())
+.add(revealANIME());
 
 
 
