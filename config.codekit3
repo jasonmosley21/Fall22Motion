@@ -9,6 +9,46 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
+    "\/assets\/cjc dcndikc sdcc sc.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/cjc dcndikc sdcc sc.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/Group 7.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/Group 7.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/line-animation.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/line-animation.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/line-animation2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/line-animation2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/pattern-animation.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -63,12 +103,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/customlogo.kit" : {
+    "\/dev\/content\/foundanimation.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/customlogo.html",
+      "oAP" : "\/dev\/content\/foundanimation.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
