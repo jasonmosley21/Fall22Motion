@@ -7,7 +7,7 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 function barsANIME(){
     var tl = gsap.timeline()
 
-    tl.fromTo("#bar3",{ transformOrigin:"right",duration:.75,x:-230, drawSVG:"25% 75%"},{drawSVG:"15% 85%",x:0 },"centerbar")
+    tl.fromTo("#bar3",{ transformOrigin:"right",duration:.75,x:-450, drawSVG:"25% 75%"},{drawSVG:"15% 85%",x:0 },"centerbar")
     tl.fromTo("#bar1",{ transformOrigin:"center bottom",duration:.5, drawSVG:"50% 50%",y:0},{drawSVG:"10% 90%", delay:-.46, strokeOpacity:0,y:0},"midbar")
     tl.fromTo("#bar2",{ transformOrigin:"center bottom",duration:.25, drawSVG:"50% 50%", delay:-.47, strokeOpacity:.5,y:0},{drawSVG:"0% 100%",delay:-.47,y:0, strokeOpacity:0},"outerbar")
     tl.fromTo("#bar4",{ transformOrigin:"right",duration:.75,x:230, drawSVG:"25% 75%"},{drawSVG:"15% 85%",x:0},"centerbar")
@@ -72,7 +72,7 @@ function titleANIME(){
     tl.fromTo(".u3",{drawSVG:"100% 100%",y:47},{drawSVG:"100% 0%",y:94},"danceagain")
     tl.to(".leftbar",{x:32},"switch")
     tl.to(".rightbar",{x:-32},"switch")
-    tl.to(".u3",{scaleY:0,transformOrigin:"center center"})
+    tl.to(".u3",{scaleY:-1,transformOrigin:"center center"})
     return tl;
 }
 
