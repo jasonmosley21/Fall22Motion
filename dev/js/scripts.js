@@ -7,10 +7,10 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 function barsANIME(){
     var tl = gsap.timeline()
 
-    tl.fromTo("#bar3",{ transformOrigin:"right",duration:.75,x:-450, drawSVG:"25% 75%"},{drawSVG:"15% 85%",x:0 },"centerbar")
+    tl.fromTo("#bar3",{ transformOrigin:"right",duration:.75,x:-210, drawSVG:"25% 75%"},{drawSVG:"15% 85%",x:0 },"centerbar")
     tl.fromTo("#bar1",{ transformOrigin:"center bottom",duration:.5, drawSVG:"50% 50%",y:0},{drawSVG:"10% 90%", delay:-.46, strokeOpacity:0,y:0},"midbar")
     tl.fromTo("#bar2",{ transformOrigin:"center bottom",duration:.25, drawSVG:"50% 50%", delay:-.47, strokeOpacity:.5,y:0},{drawSVG:"0% 100%",delay:-.47,y:0, strokeOpacity:0},"outerbar")
-    tl.fromTo("#bar4",{ transformOrigin:"right",duration:.75,x:230, drawSVG:"25% 75%"},{drawSVG:"15% 85%",x:0},"centerbar")
+    tl.fromTo("#bar4",{ transformOrigin:"right",duration:.75,x:300, drawSVG:"25% 75%"},{drawSVG:"15% 85%",x:0},"centerbar")
     tl.fromTo("#bar5",{ transformOrigin:"center bottom",duration:.5, drawSVG:"50% 50%",y:0},{drawSVG:"10% 90%", delay:-.46, strokeOpacity:0,y:0},"midbar")
     tl.fromTo("#bar6",{ transformOrigin:"center bottom",duration:.25, drawSVG:"50% 50%", strokeOpacity:.5,y:0},{drawSVG:"10% 90%",delay:-.47,y:0, strokeOpacity:0},"outerbar")
     tl.to("#bar3",{y:24, drawSVG:"0% 100%"}, "combine")
@@ -43,15 +43,15 @@ function barsANIME(){
 function logoANIME(){
     var tl = gsap.timeline()
     
-    tl.from(".u",{scale:1.60, x:40, y:8},"morph")
     tl.to(".outerbar",{ duration:.5,scale:0,transformOrigin:"top center"},"morph")
     tl.to("#bar2",{y:89},"morph")
     tl.to("#bar6",{y:-147},"morph")
-    tl.to("#bar3",{x:230},"morph")
-    tl.to("#bar4",{x:-230},"morph")
-    tl.from(".u",{drawSVG:"0%"},"morph")
-    tl.from(".leftbar",{y:-320,scale:1.60},"morph")
-    tl.from(".rightbar",{y:160,scale:1.60},"morph")
+    tl.to("#bar3",{x:325},"morph")
+    tl.to("#bar4",{x:-240},"morph")
+    tl.fromTo(".u",{drawSVG:"44% 44%",scale:1.60, x:40, y:8, transformOrigin:"center center"},{drawSVG:"0% 44%",scale:1, x:0, y:0},"morph")
+    tl.from(".leftbar",{y:-280,scale:1.60},"morph")
+    tl.from(".rightbar",{y:230,scale:1.60},"morph")
+    tl.from("#rightclip",{y:-50,scale:1.60, delay:.18},"morph")
     return tl;
 }
 
@@ -66,10 +66,9 @@ function titleANIME(){
     tl.from("#horizontalt",{drawSVG:0},"title")
     
     
-    tl.to(".u",{drawSVG:"0%",y:47},"dance")
-    tl.fromTo(".u2",{drawSVG:"0%"},{drawSVG:"100%",y:47},"dance")
-    tl.fromTo(".u2",{drawSVG:"100% 0%"},{drawSVG:"100% 100%",y:94},"danceagain")
-    tl.fromTo(".u3",{drawSVG:"100% 100%",y:47},{drawSVG:"100% 0%",y:94},"danceagain")
+    tl.to(".u",{drawSVG:"56% 100%",y:94},"dance")
+    tl.to(".clips",{y:94},"dance")
+    tl.to("#u",{x:21},"dance")
     tl.to(".leftbar",{x:32},"switch")
     tl.to(".rightbar",{x:-32},"switch")
     tl.to(".u3",{scaleY:-1,transformOrigin:"center center"})
